@@ -23,18 +23,18 @@ Partial Class frmairbnbreservations
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
-        Me.btndisplaycost = New System.Windows.Forms.Button()
-        Me.btnclear = New System.Windows.Forms.Button()
-        Me.btnexit = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.txtnights = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.lblcost = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.lblprice = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.lblcost = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.txtnights = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.btnexit = New System.Windows.Forms.Button()
+        Me.btnclear = New System.Windows.Forms.Button()
+        Me.btndisplaycost = New System.Windows.Forms.Button()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer1.Panel2.SuspendLayout()
         Me.SplitContainer1.SuspendLayout()
@@ -70,72 +70,42 @@ Partial Class frmairbnbreservations
         Me.SplitContainer1.SplitterWidth = 5
         Me.SplitContainer1.TabIndex = 0
         '
-        'btndisplaycost
+        'lblprice
         '
-        Me.btndisplaycost.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btndisplaycost.Location = New System.Drawing.Point(72, 350)
-        Me.btndisplaycost.Name = "btndisplaycost"
-        Me.btndisplaycost.Size = New System.Drawing.Size(87, 23)
-        Me.btndisplaycost.TabIndex = 0
-        Me.btndisplaycost.Text = "Display Cost"
-        Me.btndisplaycost.UseVisualStyleBackColor = True
+        Me.lblprice.AutoSize = True
+        Me.lblprice.BackColor = System.Drawing.Color.FloralWhite
+        Me.lblprice.Location = New System.Drawing.Point(409, 222)
+        Me.lblprice.Name = "lblprice"
+        Me.lblprice.Size = New System.Drawing.Size(45, 13)
+        Me.lblprice.TabIndex = 11
+        Me.lblprice.Text = "Label7"
+        Me.lblprice.Visible = False
         '
-        'btnclear
+        'Label6
         '
-        Me.btnclear.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnclear.Location = New System.Drawing.Point(269, 350)
-        Me.btnclear.Name = "btnclear"
-        Me.btnclear.Size = New System.Drawing.Size(87, 23)
-        Me.btnclear.TabIndex = 1
-        Me.btnclear.Text = "Clear"
-        Me.btnclear.UseVisualStyleBackColor = True
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(403, 233)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(0, 13)
+        Me.Label6.TabIndex = 10
         '
-        'btnexit
+        'Label5
         '
-        Me.btnexit.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnexit.Location = New System.Drawing.Point(456, 350)
-        Me.btnexit.Name = "btnexit"
-        Me.btnexit.Size = New System.Drawing.Size(87, 23)
-        Me.btnexit.TabIndex = 2
-        Me.btnexit.Text = "Exit"
-        Me.btnexit.UseVisualStyleBackColor = True
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(405, 227)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(0, 13)
+        Me.Label5.TabIndex = 9
+        Me.Label5.Visible = False
         '
-        'Label1
+        'lblcost
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Impact", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(281, 26)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(197, 34)
-        Me.Label1.TabIndex = 3
-        Me.Label1.Text = "Orlando AirBnB"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(266, 93)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(180, 20)
-        Me.Label2.TabIndex = 4
-        Me.Label2.Text = "Only $79.00 per night"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(183, 156)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(153, 20)
-        Me.Label3.TabIndex = 5
-        Me.Label3.Text = "Number of Nights:"
-        '
-        'txtnights
-        '
-        Me.txtnights.Location = New System.Drawing.Point(415, 158)
-        Me.txtnights.Name = "txtnights"
-        Me.txtnights.Size = New System.Drawing.Size(32, 20)
-        Me.txtnights.TabIndex = 6
+        Me.lblcost.AutoSize = True
+        Me.lblcost.Location = New System.Drawing.Point(453, 224)
+        Me.lblcost.Name = "lblcost"
+        Me.lblcost.Size = New System.Drawing.Size(0, 13)
+        Me.lblcost.TabIndex = 8
+        Me.lblcost.Visible = False
         '
         'Label4
         '
@@ -147,41 +117,72 @@ Partial Class frmairbnbreservations
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "Cost of Stay: "
         '
-        'lblcost
+        'txtnights
         '
-        Me.lblcost.AutoSize = True
-        Me.lblcost.Location = New System.Drawing.Point(453, 224)
-        Me.lblcost.Name = "lblcost"
-        Me.lblcost.Size = New System.Drawing.Size(0, 13)
-        Me.lblcost.TabIndex = 8
-        Me.lblcost.Visible = False
+        Me.txtnights.Location = New System.Drawing.Point(415, 158)
+        Me.txtnights.Name = "txtnights"
+        Me.txtnights.Size = New System.Drawing.Size(32, 20)
+        Me.txtnights.TabIndex = 6
         '
-        'Label5
+        'Label3
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(405, 227)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(0, 13)
-        Me.Label5.TabIndex = 9
-        Me.Label5.Visible = False
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(183, 156)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(153, 20)
+        Me.Label3.TabIndex = 5
+        Me.Label3.Text = "Number of Nights:"
         '
-        'Label6
+        'Label2
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(403, 233)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(0, 13)
-        Me.Label6.TabIndex = 10
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(266, 93)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(180, 20)
+        Me.Label2.TabIndex = 4
+        Me.Label2.Text = "Only $79.00 per night"
         '
-        'lblprice
+        'Label1
         '
-        Me.lblprice.AutoSize = True
-        Me.lblprice.Location = New System.Drawing.Point(409, 222)
-        Me.lblprice.Name = "lblprice"
-        Me.lblprice.Size = New System.Drawing.Size(45, 13)
-        Me.lblprice.TabIndex = 11
-        Me.lblprice.Text = "Label7"
-        Me.lblprice.Visible = False
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Impact", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(281, 26)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(197, 34)
+        Me.Label1.TabIndex = 3
+        Me.Label1.Text = "Orlando AirBnB"
+        '
+        'btnexit
+        '
+        Me.btnexit.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnexit.Location = New System.Drawing.Point(456, 350)
+        Me.btnexit.Name = "btnexit"
+        Me.btnexit.Size = New System.Drawing.Size(87, 23)
+        Me.btnexit.TabIndex = 2
+        Me.btnexit.Text = "Exit"
+        Me.btnexit.UseVisualStyleBackColor = True
+        '
+        'btnclear
+        '
+        Me.btnclear.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnclear.Location = New System.Drawing.Point(269, 350)
+        Me.btnclear.Name = "btnclear"
+        Me.btnclear.Size = New System.Drawing.Size(87, 23)
+        Me.btnclear.TabIndex = 1
+        Me.btnclear.Text = "Clear"
+        Me.btnclear.UseVisualStyleBackColor = True
+        '
+        'btndisplaycost
+        '
+        Me.btndisplaycost.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btndisplaycost.Location = New System.Drawing.Point(72, 350)
+        Me.btndisplaycost.Name = "btndisplaycost"
+        Me.btndisplaycost.Size = New System.Drawing.Size(87, 23)
+        Me.btndisplaycost.TabIndex = 0
+        Me.btndisplaycost.Text = "Display Cost"
+        Me.btndisplaycost.UseVisualStyleBackColor = True
         '
         'frmairbnbreservations
         '

@@ -1,41 +1,40 @@
 ﻿Public Class frmairbnbreservations
-    Private Sub SplitContainer1_Panel1_Paint(sender As Object, e As PaintEventArgs) Handles SplitContainer1.Panel1.Paint
 
-    End Sub
 
-    Private Sub txtnights_TextChanged(sender As Object, e As EventArgs) Handles txtnights.TextChanged
-        'Dim strNumberOfDays
-        'Dim strNumberOfDays = txtNumberOfDays.text
-        Dim intNumberofDays As Integer
-        intNumberofDays = 4
 
-    End Sub
 
-    Private Sub SplitContainer1_Panel2_Paint(sender As Object, e As PaintEventArgs) Handles SplitContainer1.Panel2.Paint
-        'decTotalCost As Decimal
-    End Sub
+
+
 
     Private Sub btndisplaycost_Click(sender As Object, e As EventArgs) Handles btndisplaycost.Click
-        lblprice.Visible = True
-        'dim decTotalCost As Decimal = $79.00
+
+        Dim strNumberOfDays = txtnights.Text
+        'MsgBox(strNumberOfDays)
+        Dim intNumberofDays As Integer
+        intNumberofDays = Convert.ToInt32(strNumberOfDays)
+
+
+
         Dim _decPricePerNight As Decimal = 79D
-        lblprice.Visible = True
+        Dim dectotal As Decimal = _decPricePerNight * intNumberofDays
+        'MsgBox(dectotal)
+        lblprice.Text = dectotal.ToString("c")
+
 
 
     End Sub
 
-    Private Sub Label7_Click(sender As Object, e As EventArgs) Handles lblprice.Click
-        Dim decTotalCost As Decimal
 
 
-        lblprice.Visible = True
-    End Sub
 
     Private Sub btnclear_Click(sender As Object, e As EventArgs) Handles btnclear.Click
-        btnclear.
+        txtnights.Text = ""
+        lblprice.Text = ""
     End Sub
 
     Private Sub btnexit_Click(sender As Object, e As EventArgs) Handles btnexit.Click
         Close()
     End Sub
+
+
 End Class
